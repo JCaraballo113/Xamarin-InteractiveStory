@@ -12,10 +12,11 @@ namespace InteractiveStory
 {
 	public class Story
 	{
-		private Page[] mPages = new Page[7];
+		public Page[] mPages = new Page[7];
 
 		public Story ()
 		{
+
 			mPages[0] = new Page(
 				Resource.Drawable.page0,
 				"On your return trip from studying Saturn's rings, you hear a distress signal that seems to be coming from the surface of Mars. It's strange because there hasn't been a colony there in years. Even stranger, it's calling you by name: \"Help me, {0}, you're my only hope.\"",
@@ -54,7 +55,7 @@ namespace InteractiveStory
 			mPages[6] = new Page(
 				Resource.Drawable.page6,
 				"You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate...");
-		
+			
 		}
 
 		public Page getPage(int pageId) {

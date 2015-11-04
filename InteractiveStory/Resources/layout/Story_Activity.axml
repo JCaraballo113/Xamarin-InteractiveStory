@@ -12,7 +12,6 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY" />
     <TextView
-        android:text="Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there's a very faint light up ahead."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/storyText"

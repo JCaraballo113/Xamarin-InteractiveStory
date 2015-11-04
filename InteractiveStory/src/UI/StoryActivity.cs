@@ -31,7 +31,6 @@ namespace InteractiveStory
 
 			SetContentView (Resource.Layout.Story_Activity);
 			name = Intent.GetStringExtra ("name");
-
 			storyImage = FindViewById<ImageView> (Resource.Id.mainImage);
 			storyText = FindViewById<TextView> (Resource.Id.storyText);
 			choice1 = FindViewById<Button> (Resource.Id.choice1Btn);
@@ -48,27 +47,27 @@ namespace InteractiveStory
 			storyText.Text = text;
 
 			if (mCurrentPage.isFinal()) {
-				Console.WriteLine ("Final PAge");
+				Console.WriteLine ("Nade it");
 				choice1.Visibility = ViewStates.Invisible;
-				choice2.Text = "Play Again!";
-
 				choice2.Click += delegate {
 					Finish ();
 				};
-			}
-			else {
+
+			} else {
 				choice1.Text = mCurrentPage.getChoice1 ().getText ();
 				choice2.Text = mCurrentPage.getChoice2 ().getText ();
 
-				choice1.Click += delegate {
-					int nextPageId = mCurrentPage.getChoice1().getNextPageId();
-					Console.WriteLine(nextPageId);
-					loadPage(nextPageId);
-				};
-				choice2.Click += delegate {
-					int nextPageId = mCurrentPage.getChoice2().getNextPageId();
-					loadPage(nextPageId);
-				};
+				if (!choice1.HasOnClickListeners && !choice2.HasOnClickListeners) {
+					choice1.Click += delegate {
+						int nextPageId = mCurrentPage.getChoice1 ().getNextPageId ();
+						loadPage (nextPageId);
+					};
+				
+					choice2.Click += delegate {
+						int nextPageId = mCurrentPage.getChoice2().getNextPageId();
+						loadPage(nextPageId);
+					};
+				}
 			}
 		}
 	}

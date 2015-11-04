@@ -27,7 +27,7 @@ namespace InteractiveStory
 		}
 
 		public int getPageImageId() {
-			return this.mPageImageId;
+			return mPageImageId;
 		}
 
 		public void setPageImageId(int Id) {
@@ -35,7 +35,7 @@ namespace InteractiveStory
 		}
 
 		public string getStoryText(){
-			return this.mStoryText;
+			return mStoryText;
 		}
 
 		public void setStoryText(string text){
@@ -43,11 +43,11 @@ namespace InteractiveStory
 		}
 
 		public Choice getChoice1() {
-			return this.mChoice1;
+			return mChoice1;
 		}
 
 		public Choice getChoice2() {
-			return this.mChoice2;
+			return mChoice2;
 		}
 
 		public void setChoice1(Choice choice) {

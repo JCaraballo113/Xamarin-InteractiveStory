@@ -9,8 +9,8 @@ namespace InteractiveStory
 
 		public Choice (string text, int nextPage)
 		{
-			mNextPageId = nextPage;
 			mText = text;
+			mNextPageId = nextPage;
 		}
 
 		public int getNextPageId() {
