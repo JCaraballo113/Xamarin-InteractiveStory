@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveStory", "InteractiveStory\InteractiveStory.csproj", "{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveStory.UITests", "InteractiveStory.UITests\InteractiveStory.UITests.csproj", "{18CCB412-387B-4B59-AF8F-5F8448C70AD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18CCB412-387B-4B59-AF8F-5F8448C70AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CCB412-387B-4B59-AF8F-5F8448C70AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CCB412-387B-4B59-AF8F-5F8448C70AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CCB412-387B-4B59-AF8F-5F8448C70AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

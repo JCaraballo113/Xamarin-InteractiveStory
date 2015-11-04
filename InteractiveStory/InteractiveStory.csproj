@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{72C4A9B6-6596-4E97-8E6C-0ABE224D5E7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InteractiveStory</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>InteractiveStory</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\UI\MainActivity.cs" />
+    <Compile Include="src\UI\StoryActivity.cs" />
+    <Compile Include="src\Models\Choice.cs" />
+    <Compile Include="src\Models\Page.cs" />
+    <Compile Include="src\Models\Story.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\main_title.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page0.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page3.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page4.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page5.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\page6.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\main_title.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page0.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page1.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page2.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page3.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page4.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page5.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\page6.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\main_title.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page0.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page3.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page4.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page5.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\page6.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\main_title.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page0.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page3.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page4.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page5.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\page6.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\main_title.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page0.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page1.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page2.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page3.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page4.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page5.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\page6.png" />
+    <AndroidResource Include="Resources\layout\Story_Activity.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Models\" />
+    <Folder Include="src\UI\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+</Project>

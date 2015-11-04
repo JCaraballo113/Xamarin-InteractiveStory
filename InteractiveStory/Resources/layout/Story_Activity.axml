@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light">
+    <ImageView
+        android:src="@drawable/page0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainImage"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+    <TextView
+        android:text="Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there's a very faint light up ahead."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyText"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@android:color/black" />
+    <Button
+        android:text="Choice 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice1Btn"
+        android:textColor="#FF3A8AEC"
+        android:background="@android:color/background_light" />
+    <Button
+        android:text="Choice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice2Btn"
+        android:textColor="#FF3A8AEC"
+        android:background="@android:color/background_light" />
+</LinearLayout>
