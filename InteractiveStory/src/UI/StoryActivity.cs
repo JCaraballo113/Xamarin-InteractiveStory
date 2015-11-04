@@ -57,11 +57,7 @@ namespace InteractiveStory
 				choice2.Text = mCurrentPage.getChoice2 ().getText ();
 
 				if(!choice1.HasOnClickListeners && !choice2.HasOnClickListeners){
-					choice1.Click += delegate {
-						int nextPageId = mCurrentPage.getChoice1 ().getNextPageId ();
-						loadPage (nextPageId);
-					};
-
+					choice1.Click += choicePath;
 					choice2.Click += choicePath;
 				}
 			}
@@ -72,8 +68,15 @@ namespace InteractiveStory
 		}
 
 		private void choicePath(object sender, EventArgs e) {
+			Button choiceClicked = (Button)sender;
 			int nextPageId = 0;
+
+			if(choiceClicked.Text == mCurrentPage.getChoice1().getText()){
+				nextPageId = mCurrentPage.getChoice1 ().getNextPageId ();
+			}
+			else {
 				nextPageId = mCurrentPage.getChoice2 ().getNextPageId ();
+			}
 
 			loadPage (nextPageId);
 		}
