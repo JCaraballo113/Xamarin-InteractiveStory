@@ -47,28 +47,35 @@ namespace InteractiveStory
 			storyText.Text = text;
 
 			if (mCurrentPage.isFinal()) {
-				Console.WriteLine ("Nade it");
 				choice1.Visibility = ViewStates.Invisible;
-				choice2.Click += delegate {
-					Finish ();
-				};
-
-			} else {
+				choice2.Text = "PLAY AGAIN!";
+				choice2.Click -= choicePath ;
+				choice2.Click += endActivity ;
+			} 
+			else {
 				choice1.Text = mCurrentPage.getChoice1 ().getText ();
 				choice2.Text = mCurrentPage.getChoice2 ().getText ();
 
-				if (!choice1.HasOnClickListeners && !choice2.HasOnClickListeners) {
+				if(!choice1.HasOnClickListeners && !choice2.HasOnClickListeners){
 					choice1.Click += delegate {
 						int nextPageId = mCurrentPage.getChoice1 ().getNextPageId ();
 						loadPage (nextPageId);
 					};
-				
-					choice2.Click += delegate {
-						int nextPageId = mCurrentPage.getChoice2().getNextPageId();
-						loadPage(nextPageId);
-					};
+
+					choice2.Click += choicePath;
 				}
 			}
+		}
+
+		private void endActivity(object sender, EventArgs e) {
+			Finish ();
+		}
+
+		private void choicePath(object sender, EventArgs e) {
+			int nextPageId = 0;
+				nextPageId = mCurrentPage.getChoice2 ().getNextPageId ();
+
+			loadPage (nextPageId);
 		}
 	}
 }
